@@ -10,6 +10,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.turan.todolistwithcompose.presentation.screens.*
+import com.turan.todolistwithcompose.presentation.screens.login.LoginScreen
 
 @Composable
 fun ToDoNavGraph(
@@ -18,7 +19,7 @@ fun ToDoNavGraph(
 ) {
     NavHost(
         navController = navController,
-        startDestination = Screen.Splash.route,
+        startDestination = Screen.Login.route,
         modifier = Modifier.padding(paddingValues)
     ) {
         composable(Screen.Splash.route) {
